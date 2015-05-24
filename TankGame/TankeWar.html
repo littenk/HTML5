@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>HTML5-经典的坦克大战</title>
+    <style type="text/css">
+        * {
+            margin: 0px;
+        }
+
+        #myTank {
+            width: 1002px;
+            margin: 0px auto;
+            padding: 0px;
+            overflow: hidden;
+        }
+
+        #tankMap {
+            margin: 0px auto;
+            padding: 0px;
+            background-color: black;
+            border: 1px solid gray;
+        }
+    </style>
+</head>
+<body onkeydown="getCommand();">
+    <!-- 坦克大战的战场 -->
+    <div id="myTank">
+        <canvas id="tankMap" width="1000px" height="600"></canvas>
+        <span id="info">数据：</span>
+    </div>
+    <script type="text/javascript" src="TankeWar.js"></script>
+    <script type="text/javascript">
+        //得到画布
+        var canvas_tank = document.getElementById("tankMap");
+        //得到绘图上下文
+        var cxt = canvas_tank.getContext("2d");
+        //实例化我的坦克
+        var hero = new Hero(100, 40, 0, heroColor);
+        //定义子弹数组
+        var heroBullets = new Array();
+        //定义一个炸弹数组，可以存放多个炸弹
+        var heroBombs = new Array();
+
+        //定义敌人的坦克（敌人的坦克有多少？思路：是单个单个定义，还是放在数组中？数组）
+        var enemyTanks = new Array();
+
+        //定义敌人子弹数组
+        var enemyBullets = new Array();
+
+        //定义敌人炸弹数组
+        var bombs = new Array();
+
+        for (var i = 0; i < 15; i++) {
+            //创建一个坦克
+            var enemyTank = new EnemyTank((i + 1) * 50, 0, 2, enemyColor);
+            //把这个坦克放入数组
+            enemyTanks[i] = enemyTank;
+
+            //启动这个敌人的坦克
+            window.setInterval("enemyTanks["+i+"].run()", 50);
+
+            //当创建敌人坦克时就分配子弹
+            var eb = new Bullet(enemyTanks[i].x + 9, enemyTanks[i].y + 30, 2, 1, "enemy", enemyTanks[i]);
+
+            //把子弹放入数组中
+            enemyBullets[i] = eb;
+
+            //启动该子弹
+            var ebtimer = window.setInterval("enemyBullets["+i+"].run()",50);
+            enemyBullets[i].timer = ebtimer;
+
+            
+            //绘制坦克
+            //drawTank(enemyTanks[i]);
+        }
+
+
+
+        //定时刷新作战区域，把要在作战区域出现的元素（自己的坦克，敌人的坦克，子弹，炸弹，障碍物）重新绘制
+        //游戏思想
+        function flashTankMap() {
+            //清屏
+            cxt.clearRect(0, 0, 1000, 600);
+            //绘制我的坦克
+            drawTank(hero);
+            //画出自己的子弹
+            drawHeroBullet();
+            //判断我的子弹是否击中敌人的坦克，击中了则让其消失
+            isHitEnemyTank();
+            //炸弹效果
+            drawEnemyBomb();
+            //画出敌人的子弹
+            drawEnemyBullet();
+
+            //画出所有敌人的坦克，上面为创建，创建归创建，画坦克归画坦克
+            for (var i = 0; i < 15; i++) {       //假如敌人的坦克消失了一个？
+                if (enemyTanks[i].isLive) {
+                    drawTank(enemyTanks[i]);
+                }
+            }
+
+        }
+        flashTankMap();
+
+
+
+
+        //接收用户输入的命令，W --向上，D --向右，S --向下，A --向左，j表示发子弹
+        function getCommand() {
+            //当按下键后，事件--->event对象--->事件处理函数
+            var code = event.keyCode;
+            switch (code) {
+                case 87:
+                    //hero.y -= hero.speed;
+                    //hero.direct = 1;          //这样的两行代码不是OOP思想，公司里面会被骂，很垃圾的代码!看下面的方法
+                    hero.moveUp();
+                    break;
+                case 68:
+                    hero.moveRight();           //调用这个对象的方法，我不管你怎么处理该对象的属性
+                    break;
+                case 83:
+                    hero.moveDown();
+                    break;
+                case 65:
+                    hero.moveLeft();
+                    break;
+                case 74:
+                    hero.shotEnemy();
+                    break;
+            }
+            //触发
+            flashTankMap();
+        }
+        //定时器，定时刷新界面
+        window.setInterval("flashTankMap()", 50);
+    </script>
+</body>
+</html>

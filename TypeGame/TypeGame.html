@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>HTML5经典游戏之打字游戏</title>
+    <style type="text/css">
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #div_TypeGame {
+            margin: 0px auto;
+            padding: 0px;
+            width: 1002px;
+            overflow: hidden;
+        }
+
+        #canvas_TypeGameMap {
+            margin: 0px auto;
+            border: 1px solid gray;
+            background-color: black;
+            opacity: 0.8;
+        }
+
+        #control {
+            border: 1px solid gray;
+            width: 600px;
+            height: 400px;
+            background-color: gray;
+            display: none;
+            position: absolute;
+            top: 100px;
+            left: 400px;
+        }
+
+        #span_setting {
+            /*float:right;*/
+        }
+    </style>
+    <script src="script/jquery-1.7.1.min.js"></script>
+</head>
+<body onkeydown="getCommand();">
+    <div id="div_TypeGame">
+        <canvas id="canvas_TypeGameMap" width="1000" height="650"></canvas>
+        <input type="button" value="开始游戏"  hidden="hidden"/>
+        <input type="button" value="暂停游戏"  hidden="hidden"/>
+        <span id="span_setting" hidden="hidden">
+            <input type="button" id="input_setting" value="游戏设置" />         <!--滑动条-->
+        </span>
+        <span id="info">玩家：</span>
+    </div>
+    <div id="control"></div>
+    <!-- 声效 -->
+    <audio id="m_hitting" hidden="hidden">
+        <!--<source src="johann_sebastian_bach_air.ogg">-->
+        <source src="source/hitting0.wav">
+    </audio>
+
+
+    <script type="text/javascript" src="script/TypeGame.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#input_setting").click(
+                function () {
+                    $("#control").css("display", "block");
+                });
+        });
+
+        
+        //得到画布
+        var canvas_TG = document.getElementById("canvas_TypeGameMap");
+        //得到画笔
+        var cxt = canvas_TG.getContext("2d");
+        
+        //接收所有的字符
+        var charList = new Array();
+
+        //实例化玩家
+        var user = new users("muggle", 0);
+
+        function flashMap() {
+            cxt.clearRect(0, 0, 1000, 650);             //清屏
+            drawChar();                                 //画出数组charList中所有的字符
+            lblMove();                                  //让字符移动
+        }
+
+        //接收用户输入的字符
+        function getCommand() {
+            var code = event.keyCode;
+            if (code >= 65 && code <= 90) {
+                for (var i = 0; i < charList.length; i++) {
+                    var lbl = charList[i];
+                    if (lbl.str == String.fromCharCode(code)) {
+                        user.count += 1;
+                        charList[i].isLive = false;
+                        charList.splice(i, 1);
+                        m_hitting();
+                        var allhit = user.count + user.falses;
+                        var zql = parseInt(((user.count / allhit) * 100));
+                        document.getElementById("info").innerText = "玩家：" + user.name + " 分数：" + user.count + " 正确率：" + zql + "%";
+                        return;
+                    }
+                }
+                user.falses += 1;
+                var allhit = user.count + user.falses;
+                var zql = parseInt(((user.count / allhit) * 100));
+                document.getElementById("info").innerText = "玩家：" + user.name + " 分数：" + user.count + " 正确率：" + zql + "%";
+            }
+        }
+        //localStorage.lastname = user.name;
+        //document.write(localStorage.lastname);        //HTML5数据存储
+
+        
+
+        window.setInterval("createlbl()", 888);        //产生字符
+        window.setInterval("flashMap()", 50);           //刷新画布，让字符移动
+
+    </script>
+</body>
+</html>
+

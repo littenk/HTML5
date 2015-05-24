@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>HTML5经典游戏之俄罗斯方块</title>
+    <style type="text/css">
+        * {
+            margin: 0px;
+            padding: 0px;
+            background-color: #f7f7f7;
+        }
+
+        #div_canvas {
+            width: 500px;
+            height: 500px;
+            position: relative;
+            z-index: 0;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #div_content {
+            border: 1px solid black;
+            /*圆角+阴影*/
+            border-radius: 20px 20px 20px 20px;
+            box-shadow: 10px 0px 50px 0px gray;
+            background-color: gray;
+            padding: 20px;
+            overflow: hidden;
+            width: 340px;
+        }
+
+        input {
+            margin-top: 30px;
+            margin-left: 50px;
+            height: 50px;
+            width: 110px;
+            font-family: "微软雅黑";
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="div_canvas" style="left: 29px; top: 14px;">
+        <div id="div_content" style="cursor: move;">
+            <canvas id="canvas_map" width="200" height="440" style="border: 1px solid gray; background-color: black"></canvas>
+            <canvas id="canvas_info" width="100" height="440" style="border: 1px solid gray; background-color: black; margin-left: 20px;"></canvas>
+        </div>
+        <div id="contrl">
+            <input type="button" onclick="stateGame();" value="开始新游戏" />
+            <input type="button" onclick="stopGame()" id="stop" value="暂停" style="" />
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+    <script type="text/javascript">
+        var posX;
+        var posY;
+        fdiv = document.getElementById("div_canvas");
+        document.getElementById("div_content").onmousedown = function (e) {
+            if (!e) e = window.event; //IE
+            posX = e.clientX - parseInt(fdiv.style.left);
+            posY = e.clientY - parseInt(fdiv.style.top);
+            document.onmousemove = mousemove;
+        }
+        document.onmouseup = function () {
+            document.onmousemove = null;
+        }
+        function mousemove(ev) {
+            if (ev == null) ev = window.event;//IE
+            fdiv.style.left = (ev.clientX - posX) + "px";
+            fdiv.style.top = (ev.clientY - posY) + "px";
+        }
+
+        var canvas_map = document.getElementById("canvas_map");
+        var cxt = canvas_map.getContext("2d");
+
+        var canvas_content = document.getElementById("canvas_info");
+        var cxt_con = canvas_content.getContext("2d");
+
+        var nextRetris = 2;         //初始化第一方块类型
+        var sum = 0;                //初始化分数
+        var gameTimer = null;
+
+        //二维数组
+        var mapConent = new Array();
+        for (var i = 0; i < 22; i++) {
+            mapConent[i] = new Array();
+            for (var j = 0; j < 10; j++) {
+                mapConent[i][j] = null;
+            }
+        }
+
+        var retris = null;      //初始化一个方块，当前
+        var nextR = null;       //下一个方块类型
+
+        stateGame();            //开始游戏
+
+        //刷新画布
+        function flashMap() {
+            cxt.clearRect(0, 0, 200, 440);          //清屏，游戏界面
+            cxt_con.clearRect(0, 0, 100, 440);      //清屏，分数
+            drawRetris(retris);                     //画出当前移动的方块
+            drawfj();                               //画出所有的小方块
+            isLine();                               //消掉满行中的所有小方块，满足则消掉改行，上方的方块下移动一行
+            drawImg(nextRetris);                    //画出下一个方块，以及分数
+        }
+
+        //接收命令
+        document.onkeydown = function getCommand() {
+            var code = event.which || event.keyCode;
+            //alert(code);
+            switch (code) {
+                case 37:
+                    retris.moveLeft();
+                    break;
+                case 38:
+                    retris.changeDirect();
+                    break;
+                case 39:
+                    retris.moveRight();
+                    break;
+                case 40:
+                    retris.moveDown();
+                    break;
+                default:
+                    break;
+            }
+        }
+
+
+    </script>
+
+</body>
+</html>
