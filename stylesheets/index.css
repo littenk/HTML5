@@ -1,0 +1,34 @@
+body{
+    font: 400 16px/1.5 "Hiragino Sans GB","Microsoft YaHei",hei,Arial,"Lucida Grande",Verdana;
+}
+#div_myGame{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: seagreen;
+    border-radius: 10px;
+}
+.dl{
+    text-align:center;
+    color:black;
+}
+.dl img{
+    width:60%;height:400px;
+}
+.dl:hover{
+    color:black;
+}
+
+.a_color{
+    margin: 0px;
+    width:100%;
+    color:black;
+    text-align:center;
+}
+.a_color:hover {
+    color:black;
+}
+.a_color img{
+    width:60%;
+    height:400px;
+}

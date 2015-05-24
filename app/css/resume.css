@@ -1,0 +1,938 @@
+﻿/*页脚的图片*/
+.tools a#vitaesou {
+    background-image: url("../images/vitaesous.png");
+    color: #FA8F31;
+}
+
+.tools a#a-me {
+    background-image: url("../images/mehs.png");
+    color: #808080;
+}
+
+/*每一个项*/
+.div-item a {
+    display: block;
+    height: 64px;
+    line-height: 64px;
+    padding-left: 8%;
+    background-image: url("../images/tip.png");
+    background-repeat: no-repeat;
+    background-position: 92%;
+}
+
+.div-items {
+    width: 100%;
+    height: 64px;
+    border-bottom: 1px solid #C6C6C8;
+}
+    /*每一个项*/
+    .div-items a {
+        display: block;
+        height: 84px;
+        line-height: 84px;
+        padding-left: 8%;
+        background-image: url("../images/tip.png");
+        background-repeat: no-repeat;
+        background-position: 92%;
+    }
+
+
+
+
+/*主页样式*/
+#div-main {
+    width: 100%;
+    height: 100%;
+}
+/*主页头部样式*/
+#head {
+    width: 100%;
+    margin-bottom: 1%;
+}
+/*主页头部*/
+#heads {
+    height: 10%;
+    background-color: #f4f4f4;
+    padding-top: 2%;
+}
+
+#div-a {
+    border: 1px solid #fff;
+    width: 80%;
+    height: 60px;
+    background-color: #fff;
+    margin: 0 auto;
+    border-radius: 7px;
+}
+
+.a-a {
+    background-image: url("../images/fdj.png");
+    background-size: 25px;
+    background-repeat: no-repeat;
+    height: 60px;
+    line-height: 60px;
+    background-position: 10%;
+    display: block;
+    text-align: center;
+}
+
+#div-b {
+    width: 100%;
+    height: 70px;
+    border-bottom: 2px solid #f4f4f4;
+    border-top: 2px solid #f4f4f4;
+    position: relative;
+}
+
+/*主页中间部分*/
+.divcs {
+    background-color: #f4f4f4;
+}
+
+/*文字排版*/
+.div-d {
+    width: 100%;
+    height: 50px;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #e3e3e5;
+    position: relative;
+}
+
+    .div-d:after {
+        content: url(../images/tip.png);
+        right: 15px;
+        position: absolute;
+        height: 35px;
+        top: 8px;
+    }
+
+/*.div-c {
+    height: 70px;
+    border-bottom: 1px solid #f4f4f4;
+    position: relative;
+    background-image: url("../images/add.png");
+    background-repeat: no-repeat;
+    background-position: 83%;
+}*/
+.div-c {
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid #f4f4f4;
+    position: relative;
+    background-image: url("../images/add.png");
+    background-repeat: no-repeat;
+    background-position: 80%;
+
+       -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            -webkit-transform: translate3d(0, 0, 0);
+            -moz-transform: translate3d(0, 0, 0);
+            -ms-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 10, 0);
+}
+    .div-c.slidein {
+         -webkit-transform: translate3d(-70px, 0, 0);
+                -moz-transform: translate3d(-70px, 0, 0);
+                -ms-transform: translate3d(-70px, 0, 0);
+                transform: translate3d(-70px, 0, 0);
+    }
+
+
+
+/*搜索页面*/
+#diva {
+    height: 100%;
+    width: 100%;
+}
+
+/*搜索按钮*/
+#divb {
+    border-radius: 7px;
+    width: 25%;
+    background-color: #f88e30;
+    margin: 0 auto;
+    margin-top: 10%;
+    font-family: "微软雅黑";
+    text-decoration: none;
+    color: #fff;
+    background-image: url("../images/fdjb.png");
+    background-repeat: no-repeat;
+    background-size: 25px;
+    position: relative;
+    background-position: 20%;
+}
+
+
+
+
+/*职位发布*/
+
+/*职位信息*/
+
+.div-itema {
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    padding-left: 8%;
+    border-bottom: 1px solid #C6C6C8;
+}
+
+#divass {
+    height: 100%;
+    width: 100%;
+}
+
+.div-itemss {
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    padding-left: 8%;
+    border-bottom: 1px solid #C6C6C8;
+}
+
+.div-items {
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid #C6C6C8;
+}
+
+    .div-items a {
+        display: block;
+        height: 60px;
+        line-height: 60px;
+        padding-left: 8%;
+    }
+/*职位描述*/
+.div-itemsa {
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    padding-left: 8%;
+    border-bottom: 1px solid #C6C6C8;
+}
+
+.textarea {
+    padding-left: 30%;
+    padding-top: 2%;
+}
+/*灰色部分*/
+.divcsa {
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #C6C6C8;
+    border-top: 1px solid #C6C6C8;
+}
+
+
+/*发布按钮*/
+#divbsss {
+    width: 100%;
+    background-color: #f88e30;
+    margin: 0 auto;
+    font-family: "微软雅黑";
+    text-align: center;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+}
+
+
+
+
+/*保存页面*/
+#divas {
+    height: 100%;
+    width: 100%;
+}
+
+/*保存页面按钮*/
+#divbs {
+    border-radius: 7px;
+    width: 25%;
+    background-color: #f88e30;
+    margin: 0 auto;
+    margin-top: 10%;
+    font-family: "微软雅黑";
+    text-decoration: none;
+    color: #fff;
+    height: 40px;
+    background-image: url("../images/fdjb.png");
+    background-size: 25px;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: 20%;
+}
+
+/*留言页面*/
+#liuyan {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/*文本框*/
+.div-q {
+    width: 60%;
+    height: 30%;
+    border: 2px solid black;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+}
+
+.img-b {
+    width: 27px;
+    height: 26px;
+}
+/*底部文字*/
+.div-o {
+    width: 49%;
+    height: 50px;
+    font-family: "微软雅黑";
+    float: left;
+    border-right: 1px solid #efe7e7;
+    border-top: 1px solid #efe7e7;
+}
+
+    .div-o span {
+        display: block;
+        width: 100%;
+        height: 50px;
+        text-align: center;
+        line-height: 80px;
+    }
+
+.div-p {
+    width: 49%;
+    height: 50px;
+    font-family: "微软雅黑";
+    float: left;
+    border-top: 1px solid #efe7e7;
+}
+
+    .div-p span {
+        display: block;
+        width: 100%;
+        height: 50px;
+        text-align: center;
+        line-height: 80px;
+    }
+
+
+
+/*搜索结果页面*/
+.tou {
+    height: 50px;
+}
+
+.div-e {
+    width: 49%;
+    height: 50px;
+    background-image: url("../images/ssj.png");
+    background-repeat: no-repeat;
+    background-position: 80%;
+    font-family: "微软雅黑";
+    float: left;
+    border-right: 1px solid #efe7e7;
+    border-bottom: 1px solid #efe7e7;
+}
+
+    .div-e span {
+        display: block;
+        width: 100%;
+        height: 50px;
+        text-align: center;
+        line-height: 80px;
+    }
+
+
+.div-f {
+    width: 49%;
+    height: 50px;
+    background-image: url("../images/ssj.png");
+    background-repeat: no-repeat;
+    background-position: 93%;
+    font-family: "微软雅黑";
+    float: left;
+    border-bottom: 1px solid #efe7e7;
+}
+
+    .div-f span {
+        display: block;
+        width: 100%;
+        height: 50px;
+        text-align: center;
+        line-height: 80px;
+    }
+/*灰色部分*/
+#div-g {
+    width: 100%;
+    height: 10px;
+    background-color: #f4f4f4;
+}
+
+#div-b:before {
+    content: "订阅简历";
+    left: 10px;
+    position: absolute;
+    vertical-align: middle;
+    height: 70px;
+    line-height: 70px;
+}
+
+#div-b:after {
+    content: url(../images/add.png);
+    right: 5%;
+    position: absolute;
+    height: 35px;
+    top: 20px;
+}
+
+
+/*搜索页面中间部分*/
+.div-h:after {
+    content: url(../images/tip.png);
+    right: 15px;
+    position: absolute;
+    height: 35px;
+    top: 8px;
+}
+
+.div-h {
+    width: 100%;
+    height: 65px;
+    border-top: 1px solid #f4f4f4;
+    border-bottom: 1px solid #f4f4f4;
+    position: relative;
+    font-family: "微软雅黑";
+    font-size: 10px;
+}
+
+    .div-h ul {
+        margin-top: 10px;
+    }
+
+        .div-h ul li {
+            display: block;
+            height: 50px;
+            width: 23%;
+            float: left;
+        }
+
+            .div-h ul li a {
+                display: block;
+                width: 100%;
+                overflow: hidden;
+                text-align: center;
+            }
+
+/*字体颜色*/
+.asd {
+    color: #afafaf;
+}
+
+/*对勾*/
+.selCN {
+    color: #fa8f31;
+    background-image: url("../images/tick.png");
+    background-repeat: no-repeat;
+    background-position: 93%;
+}
+
+/*二级菜单ul样式*/
+.gznx {
+    height: 50px;
+    line-height: 50px;
+    padding-left: 5%;
+    background-color: #fff;
+    border-bottom: 1px solid #e3e3e5;
+}
+
+/*二级菜单*/
+.div-i {
+    width: 100%;
+    height: 50px;
+    z-index: 100;
+    font-family: "微软雅黑";
+    position: absolute;
+    top: 51px;
+    left: 0px;
+}
+
+    .div-i span {
+        display: block;
+        height: 50px;
+        text-align: center;
+        line-height: 80px;
+    }
+
+.div-j {
+    width: 100%;
+    height: 50px;
+    z-index: 100;
+    font-family: "微软雅黑";
+    position: absolute;
+    top: 51px;
+    left: 0px;
+}
+
+    .div-j span {
+        display: block;
+        height: 50px;
+        text-align: center;
+        line-height: 80px;
+    }
+
+.div-r {
+    display: none;
+    width: 100%;
+    z-index: 100;
+    height: 100%;
+    background-color: #FFF;
+    font-family: "微软雅黑";
+}
+
+.div-s {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: #FFF;
+    /*height: 50px;*/
+    z-index: 100;
+    font-family: "微软雅黑";
+    /*position: absolute;*/
+    /*top: 51px;*/
+    /*left: 0px;*/
+}
+
+/*提问页面*/
+
+.div-l input {
+    text-align: center;
+    width: 50%;
+    height: 44px;
+    margin-left: 24.5%;
+}
+/*文本框样式右侧图片*/
+.img-a {
+    background-image: url("../images/yq.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50px;
+    height: 100%;
+    float: right;
+    margin-right: 2%;
+}
+
+.div-k {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.question {
+    height: 50px;
+}
+
+/*提问页面灰色部分*/
+.divc {
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #e3e3e5;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+
+/*提问页面按钮部分*/
+#divbss {
+    border-radius: 7px;
+    background-color: #fa8f31;
+    color: #fff;
+    margin: 0 auto;
+    height: 40px;
+    width: 20%;
+}
+
+/*删除按钮*/
+.delete {
+    height: 70px;
+    line-height: 70px;
+    width: 70px;
+    background-color: #f92635;
+    color: #fff;
+    float: right;
+    text-align: center;
+}
+
+.span_Name {
+    position: absolute;
+    right: 15%;
+    line-height: 64px;
+}
+
+.div-a-up {
+    background-image: url("../images/yqc.png");
+}
+
+.div-e-up {
+    background-image: url("../images/jtc.png");
+    color: #fa8f31;
+}
+
+.div-c-up {
+    background-image: url("../images/del.png");
+    background-repeat: no-repeat;
+    /*background-position: 83%;*/
+}
+
+
+/*对勾*/
+.ul_ijxl {
+    color: #fa8f31;
+    background-image: url("../images/tick.png");
+    background-repeat: no-repeat;
+    background-position: 80%;
+}
+
+/*方学天4-10 13:01*/
+/*所选地区*/
+#div_area {
+    width: 100%;
+    background-color: #FFF;
+    display: none;
+}
+
+/*把已经选择了的地区，添加到这个div*/
+#div_beSelArea {
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    background-color: #FFF;
+}
+/*所有可选的地区*/
+#div_AllArea {
+    width: 100%;
+}
+
+    #div_AllArea ul.ul_provinces {
+        width: 45%;
+        float: left;
+    }
+
+        #div_AllArea ul.ul_provinces li.province {
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+        }
+
+            #div_AllArea ul.ul_provinces li.province span {
+                padding-left: 7%;
+            }
+
+            #div_AllArea ul.ul_provinces li.province:hover {
+                background-color: #EAEAEA;
+            }
+
+    #div_AllArea ul.ul_city {
+        float: left;
+        width: 48%;
+        display: none;
+        top: 0px;
+        height: 100%;
+        left: 100%;
+        background-color: #EAEAEA;
+        padding-left: 7%;
+    }
+
+        #div_AllArea ul.ul_city li {
+            height: 50px;
+            line-height: 50px;
+            background-repeat: no-repeat;
+        }
+
+
+.addli_city {
+    color: #ff6a00;
+    background-image: url('../images/tick.png');
+    background-repeat: no-repeat;
+    background-position: 90%;
+}
+
+.selectPro {
+    background-color: #EAEAEA;
+}
+/*选中的市，添加至头部，设置其样式*/
+a.selectedCity {
+    display: block;
+    padding: 0px 5px 0px 5px;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    border: 1px solid red;
+}
+
+    a.selectedCity img {
+        margin-left: 5px;
+        position: relative;
+        top: 3px;
+    }
+
+
+.div-selected {
+    overflow: auto;
+    line-height: 84px;
+    width: 93%;
+    padding-left: 7%;
+    background-color: #FFF;
+    border-bottom: 2px solid #C6C6C8;
+}
+
+    .div-selected ul {
+        background-color: #FFF;
+        width: 100%;
+        height: 50px;
+        overflow: hidden;
+    }
+
+        .div-selected ul li {
+            width: 45%;
+            float: left;
+            height: 40px;
+            line-height: 50px;
+        }
+
+            .div-selected ul li a {
+                /*display: block;*/
+                line-height: 15px;
+            }
+
+                .div-selected ul li a img {
+                    height: 20px;
+                    width: 20px;
+                }
+
+.a_clo {
+    margin-left: 5px;
+    margin-top: 15px;
+    float: right;
+    height: 20px;
+    width: 20px;
+    background-image: url("../images/zs.png");
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+}
+
+.slidedown {
+    background-image: url("../images/sq.png");
+}
+
+.li-rightSave {
+    float: right;
+    text-align: right;
+}
+
+
+
+/*被选中的行业*/
+a.selectedInd {
+    display: block;
+    padding: 0px 5px 0px 5px;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    border: 1px solid red;
+}
+
+    a.selectedInd img {
+        height: 17px;
+        padding-top: 10px;
+        margin-left: 10px;
+    }
+
+#div-industry {
+    display: none;
+    width: 100%;
+    background-color: #FFF;
+}
+
+.div-IndustryItem {
+    clear: both;
+    margin-left: 7%;
+    width: 93%;
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #C6C6C8;
+}
+    /*每一个项*/
+    .div-IndustryItem a {
+        display: block;
+        height: 60px;
+        line-height: 60px;
+    }
+
+
+/*被选中的行业,加上样式*/
+.selected {
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    color: #ff6a00;
+    background-position: 92%;
+    background-image: url("../images/tick.png");
+    background-repeat: no-repeat;
+}
+
+
+
+
+/*职能*/
+/*职能选择*/
+#div_function {
+    position: relative;
+    display: none;
+    width: 100%;
+    position: fixed;
+    background-color: #FFF;
+}
+
+.div_fuc_sel {
+    overflow: auto;
+    line-height: 84px;
+    border-bottom: 2px solid #C6C6C8;
+}
+
+    .div_fuc_sel li.li_leftSave {
+        display: block;
+        width: 45%;
+        height: 50px;
+        line-height: 50px;
+        float: left;
+    }
+
+    .div_fuc_sel li.li-rightSave {
+        display: block;
+        height: 50px;
+        line-height: 50px;
+        float: right;
+        text-align: right;
+    }
+
+
+#div_function ul.ul_functions {
+    width: 50%;
+    float: left;
+}
+
+    #div_function ul.ul_functions li.li_funtion {
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+    }
+
+        #div_function ul.ul_functions li.li_funtion span {
+            padding-left: 10%;
+        }
+
+        #div_function ul.ul_functions li.li_funtion:hover {
+            background-color: #EAEAEA;
+        }
+
+#div_function ul.ul_secFunc {
+    float: left;
+    width: 43%;
+    display: none;
+    top: 0px;
+    height: 100%;
+    left: 100%;
+    background-color: #EAEAEA;
+    padding-left: 7%;
+}
+
+    #div_function ul.ul_secFunc li {
+        height: 50px;
+        line-height: 50px;
+        background-repeat: no-repeat;
+    }
+
+.selectPro {
+    background-color: #EAEAEA;
+}
+/*选中的市，添加至头部，设置其样式*/
+a.selectedCity {
+    display: block;
+    padding: 0px 5px 0px 5px;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    border: 1px solid red;
+}
+
+    a.selectedCity img {
+        margin-left: 5px;
+        position: relative;
+        top: 3px;
+    }
+
+
+
+
+/*职能*/
+.div_Fucselected {
+    overflow: auto;
+    line-height: 84px;
+    width: 95%;
+    padding-left: 5%;
+    background-color: #FFF;
+    border-bottom: 2px solid #C6C6C8;
+}
+
+    .div_Fucselected ul {
+        width: 100%;
+        height: 50px;
+        overflow: hidden;
+        background-color: #FFF;
+    }
+
+        .div_Fucselected ul li {
+            width: 45%;
+            float: left;
+            height: 40px;
+            line-height: 50px;
+        }
+
+            .div_Fucselected ul li a {
+                /*display: block;*/
+                line-height: 15px;
+            }
+
+                .div_Fucselected ul li a img {
+                    height: 20px;
+                    width: 20px;
+                }
+
+#beselectFuc {
+    background-color: #FFF;
+    width: 100%;
+    overflow: auto;
+}
+
+.pos {
+    position: fixed;
+}
+
+#allIndustry, #div_Allfunction, #div_allGoodW, #div_AllArea {
+    margin-top: 52px;
+}

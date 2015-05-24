@@ -1,0 +1,378 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes" />
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true" />
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application" />
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app" />
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/management.css" rel="stylesheet" />
+    <script src="scripts/jquery-1.11.0.min.js"></script>
+    <script src="scripts/common.js"></script>
+    <title>简历管理</title>
+</head>
+<body>
+    <div id="div-main">
+        <!--头部-->
+        <div id="head">
+            <div class="tou">
+                <a href="#">
+                    <div class="div-e">
+                        <span class="tabHeader" style="height: 50px; line-height: 50px; color: #faa360">应聘简历</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="div-f">
+                        <span class="tabHeader" style="height: 50px; line-height: 50px;">下载简历</span>
+                    </div>
+                </a>
+
+            </div>
+            <div class="div-g">&nbsp</div>
+            <!--中间内容部分-->
+            <div class="tabItem">
+                <div class="searchInfo" style="overflow: hidden;">
+                    <div class="div-c">
+                        <div class="div-h" style="float: left; width: 100%">
+                            <ul>
+                                <li style="width: 23%;">
+                                    <a class="jobType addColorGray">计算机应用</a><!--添加样式addColorGray，颜色为灰色，表示已读-->
+                                    <a class="asd">李三</a>
+                                </li>
+                                <li>
+                                    <a class="addColorGray">MBA</a><!--添加样式addColorGray，颜色为灰色，表示已读-->
+                                    <a class="asd">深圳</a>
+                                </li>
+                                <li><a>&nbsp;</a><a class="asd">25</a></li>
+
+                                <li>
+                                    <a>&nbsp;</a>
+                                    <a class="asd">男</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="delete">删除</div>
+                    </div>
+                </div>
+                <div class="searchInfo" style="overflow: hidden;">
+                    <div class="div-c">
+                        <div class="div-h" style="float: left; width: 100%">
+                            <ul>
+                                <li style="width: 23%;">
+                                    <a class="jobType">计算机应用</a>
+                                    <a class="asd">李三</a>
+                                </li>
+                                <li>
+                                    <a>MBA</a>
+                                    <a class="asd">深圳</a>
+                                </li>
+                                <li><a>&nbsp;</a><a class="asd">25</a></li>
+
+                                <li>
+                                    <a class="ye">待回复</a>
+                                    <a class="asd">男</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="delete">删除</div>
+                    </div>
+                </div>
+                <div class="searchInfo" style="overflow: hidden;">
+                    <div class="div-c">
+                        <div class="div-h" style="float: left; width: 100%">
+                            <ul>
+                                <li style="width: 23%;">
+                                    <a class="jobType">计算机应用</a>
+                                    <a class="asd">李三</a>
+                                </li>
+                                <li>
+                                    <a>MBA</a>
+                                    <a class="asd">深圳</a>
+                                </li>
+                                <li><a>&nbsp;</a><a class="asd">25</a></li>
+
+                                <li>
+                                    <a class="ye">待回复</a>
+                                    <a class="asd">男</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="delete">删除</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="div-t" class="tabItem" style="display: none;">
+                <div>
+                    <p class="div-d">学历</p>
+                    <p class="div-w">年龄</p>
+                </div>
+                <div class="div-h">
+                    <ul>
+                        <li style="width: 23%;">
+                            <a class="jobType addColorGray">计算机应用</a><!--添加样式addColorGray，颜色为灰色，表示已读-->
+                            <a class="asd">李三</a>
+                        </li>
+                        <li>
+                            <a class="addColorGray">MBA</a><!--添加样式addColorGray，颜色为灰色，表示已读-->
+                            <a class="asd">深圳</a>
+                        </li>
+                        <li><a>&nbsp;</a><a class="asd">25</a></li>
+                        <li><a>&nbsp;</a><a class="asd">男</a></li>
+                    </ul>
+                </div>
+                <div class="div-h">
+                    <ul>
+                        <li style="width: 23%">
+                            <a class="jobType">计算机应用</a>
+                            <a class="asd">李三</a>
+                        </li>
+                        <li>
+                            <a>MBA</a>
+                            <a class="asd">深圳</a>
+                        </li>
+                        <li><a>&nbsp;</a><a class="asd">25</a></li>
+                        <li><a>&nbsp;</a><a class="asd">男</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="erji">
+            <div class="div-i" style="display: none;">
+                <ul class="ul_i_xl">
+                    <li class="gznx">中专</li>
+                    <li class="gznx">大专</li>
+                    <li class="gznx">本科</li>
+                    <li class="gznx">硕士</li>
+                    <li class="gznx">博士</li>
+                </ul>
+            </div>
+            <div class="div-j" style="display: none;">
+                <ul class="ul_j_year">
+                    <li class="gznx">1年</li>
+                    <li class="gznx">2年</li>
+                    <li class="gznx">3-4年</li>
+                    <li class="gznx">5-7年</li>
+                    <li class="gznx">8-9年</li>
+                    <li class="gznx">10年以上</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <!--回复的问题-->
+        <div id="hf" style="display: none;">
+            <div class="huifu">回复的三个问题</div>
+            <div class="div-g">&nbsp</div>
+            <div class="guihua">职业规划?</div>
+            <div class="div-z">
+                回复&nbsp:&nbsp三年实现技术顶尖梦,5年内走向<br />
+                管理层,10年进入创业期
+            </div>
+            <div class="guihua">你的梦想是什么?</div>
+            <div class="div-z">
+                回复&nbsp:&nbsp环游世界<br />
+            </div>
+            <div class="guihuas">你对以后有什么计划?</div>
+            <div id="liuyan">
+                <div class="tou">
+                    <div class="div-o">
+                        <span class="span-a" style="height: 50px; line-height: 50px;">保留</span>
+                    </div>
+                    <div class="div-o">
+                        <span style="height: 50px; line-height: 50px;">下一步面试</span>
+                    </div>
+                    <div class="div-o div-q">
+                        <span style="height: 50px; line-height: 50px;">暂不考虑</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--页脚-->
+        <div class="tools">
+            <a href="resume.html" id="vitaesou">简历搜索</a>
+            <a href="position.html" id="a-jobM">职位管理</a>
+            <a href="#" id="a-vitaM">简历管理</a>
+            <a href="me.html" id="a-me">我</a>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(function () {
+            //设置搜索结果栏宽度
+            $(".div-c").width($(window).width() + 70);
+            $(".div-c>.div-h").width($(window).width());
+
+            //主页二级菜单
+            //$(".div-c").click(function () {
+            //    $(this).toggleClass("div-c-up");
+            //    $(this).next("div").slideToggle();
+            //})
+
+            //开始触摸屏幕
+            $(".div-c").on("touchstart", function (e) {
+                start_x = e.originalEvent.targetTouches[0].clientX;
+                start_y = e.originalEvent.targetTouches[0].clientY;
+            });
+
+            oldDistanceX = 0;
+            //触摸屏幕 移动中
+            $(".div-c").on("touchmove", function (e) {
+                end_x = e.originalEvent.targetTouches[0].clientX;
+                end_y = e.originalEvent.targetTouches[0].clientY;
+                var distanceX = end_x - start_x;
+                //if ((distanceX > -50 && distanceX < 0) || (distanceX > 0 && oldDistanceX < 0)) {
+                //    $(this).css({ "margin-left": distanceX });
+                //    oldDistanceX = distanceX;
+                //}
+                if ((distanceX > -70 && distanceX < -20)) {
+                    $(".div-c,.div-h").removeClass("slidein");
+                    $(this).addClass("slidein");
+
+                } else if (distanceX > 0) {
+                    $(this).removeClass("slidein");
+                }
+            });
+
+            //结//开始触摸屏幕
+            //$(".div-c").on("touchend", function (e) {
+            //    if (oldDistanceX >= 0 && oldDistanceX < 49) {
+            //        $(this).css({ "margin-left": 0 });
+            //        return;
+            //    }
+            //    else {
+            //        $(this).css({ "margin-left": -50 });
+            //        $(this).find("div").css("display", "block");
+            //    }
+            //});
+
+            //删除
+            $(".delete").click(function () {
+                //找到delete上一级的同级删除
+                $(this).parent().next().remove();
+                $(this).parent().remove();
+            })
+
+            //顶部样式切换
+            $(".tabHeader").click(function () {
+                $(".div-i").removeClass("display", "none");
+                $(".div-j").removeClass("display", "none");
+                $(".div-i").css("display", "none");
+                $(".div-j").css("display", "none");
+                $(".div-w").removeClass("div-e-up");
+                $(".div-d").removeClass("div-e-up");
+                $(".tabHeader").css("color", "#000");
+                $(this).css("color", "#faa360");
+                var index = $(".tabHeader").index(this);
+                $(".tabItem").eq(index).show().siblings(".tabItem").hide();
+            })
+
+            //跳转回复问题
+            $(".div-h").click(function () {
+                $("#head,.tools").css("display", "none");
+                slideLeftShow("#hf");
+            })
+
+            //回复跳转主页
+            $(".span-a").click(function () {
+                $("#hf").css("display", "none");
+                $("#head,.tools").animate({
+                    width: 'toggle', opacity: 'toggle'
+                }, "slow");
+            })
+
+
+            //搜索结果二级菜单
+            $(".div-d").click(function () {
+                $(this).addClass("div-e-up");
+                $(".div-w").removeClass("div-e-up");
+                $(".div-j").slideUp(200);//工作年限表
+                $(".div-i").show();
+                $(".ul_i_xl").animate({
+                    height: 'auto', opacity: '1'
+                }, "slow");
+            });
+            $(".div-w").click(function () {
+                $(this).addClass("div-e-up");
+                $(".div-d").removeClass("div-e-up");
+                $(".div-i").slideUp(200);//年龄表
+                $(".div-j").show();
+                $(".ul_j_year").animate({
+                    height: 'auto', opacity: '1'
+                }, "slow");
+            });
+
+
+
+            //fxt 5/11
+            $(".ul_i_xl>li").click(function () {
+                $(".ul_i_xl>.gznx").removeClass("ul_ijxl");
+                $(this).addClass("ul_ijxl");
+                $(".ul_i_xl").animate({
+                    height: '0px', opacity: '0'
+                }, "slow");
+
+                $(".div-d").removeClass("div-e-up");
+                $(".div-i").slideUp();
+            });
+            $(".ul_j_year>li").click(function () {
+                $(".ul_j_year>.gznx").removeClass("ul_ijxl");
+                $(".div-w").removeClass("div-e-up");
+                $(this).addClass("ul_ijxl");
+                $(".ul_j_year").animate({
+                    height: '0px', opacity: '0'
+                }, "slow");
+                $(".div-j").slideUp();
+            });
+
+
+
+
+
+
+        })
+        //左滑动
+        function slideLeftShow(ele) {
+            $(ele).css({
+                "position": "absolute",
+                "top": "0px",
+                "left": $(document).width() + "px",
+                "display": "none"
+            }).animate({ "left": "0px" }).show();
+        }
+        //右滑动
+        function slideRightShow(ele) {
+            $(ele).css({
+                "position": "absolute",
+                "top": "0px",
+                "left": "-" + $(document).width() + "px",
+                "display": "none"
+            }).animate({ "left": "0px" }).show();
+        }
+
+
+
+        //屏幕小于等于360，只显示四个字符，屏幕大于360，则全部显示
+        function setStrLen() {
+            var bodyWidth = $(document).width();
+            if (bodyWidth <= 360) {
+                var str = $(".jobType");
+                for (var i = 0; i < str.length; i++) {
+                    var txt = $(str[i]).text();
+                    if (txt.length > 4) {
+                        $(str[i]).text($(str[i]).text().substring(0, 4) + "...");
+                    }
+                }
+            }
+        }
+        setStrLen();
+
+
+    </script>
+</body>
+</html>

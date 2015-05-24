@@ -1,0 +1,132 @@
+﻿* {
+    margin: 0px;
+    padding: 0px;
+    font: 400 14px/1.5 "Hiragino Sans GB","Microsoft YaHei",hei,Arial,"Lucida Grande",Verdana;
+}
+
+a {
+    text-decoration: none;
+}
+/*面试管理*/
+.InterviewManagement {
+    width: 100%;
+    height: 100%;
+}
+
+.PositionDisplay {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 10px;
+    padding-top: 10px;
+    border-bottom: 1px solid #d1d1d1;
+}
+
+.Position {
+    font-weight: 600;
+}
+
+.Positions {
+    color: #808080;
+}
+
+.div-g {
+    width: 100%;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #d1d1d1;
+}
+/*回复问题*/
+#hf {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    overflow-y:auto
+}
+
+.huifu {
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.guihua {
+    height: 50px;
+    line-height: 50px;
+    padding-left: 35px;
+    border-bottom: 1px solid #d1d1d1;
+}
+.guihuas {
+    height: 50px;
+    line-height: 50px;
+    padding-left: 35px;
+    border-bottom: 1px solid #d1d1d1;
+        background-image: url("../images/hsj.png");
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: 80%;
+}
+
+
+.div-z {
+    background-color: #f4f4f4;
+    padding:15px 15px 15px 35px;
+    border-bottom: 1px solid #d1d1d1;
+}
+
+
+
+/*底部按钮*/
+#liuyan {
+    font-family: "微软雅黑";
+    background-color:#Fff;
+}
+
+.tou span {
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #efe7e7;
+}
+
+.div-o {
+    width: 49%;
+    height: 50px;
+    float: left;
+    border-right: 1px solid #efe7e7;
+    border-top: 1px solid #efe7e7;
+    color:#000;
+}
+
+.div-q {
+    border-top: 1px solid #efe7e7;
+    border-right: none;
+    color: #000;
+}
+/*回复消息*/
+#xiaoxi {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+.guihua-a {
+    height: 50px;
+    line-height: 50px;
+    padding-left: 35px;
+    border-bottom: 1px solid #d1d1d1;
+    background-image: url("/images/dgc.png");
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: 5px;
+}
+.guihuas-b {
+    height: 50px;
+    line-height: 50px;
+    padding-left: 35px;
+    border-bottom: 1px solid #d1d1d1;
+    background-image: url("/images/jth.png");
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: 5px;
+}

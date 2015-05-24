@@ -1,0 +1,696 @@
+﻿/*总体*/
+#div-main {
+    width: 100%;
+    height: 100%;
+}
+
+#me {
+    display: block;
+    width: 100%;
+    background-color: #FFF;
+    /*float: left;*/
+}
+
+/*中间内容部分*/
+.div-content {
+    width: 100%;
+    height: 100%;
+    clear: both;
+    background-color: white;
+    position: absolute;
+}
+
+.items {
+    width: 100%;
+    position: absolute;
+    margin-bottom: 84px;
+}
+
+.div-item {
+    clear: both;
+    background-color: white;
+    background-image: url("../images/tip.png");
+    background-repeat: no-repeat;
+    background-position: 92%;
+}
+
+    .div-item ul.userType {
+        width: 100%;
+        border-bottom: 1px solid #C6C6C8;
+        background-color: white;
+        z-index: 10;
+        position: fixed;
+    }
+
+    .div-item ul li {
+        height: 60px;
+        line-height: 60px;
+        text-align: left;
+    }
+
+
+        .div-item ul li.menu-left {
+            padding-left: 9%;
+            width: 20%;
+            float: left;
+        }
+
+        .div-item ul li.menu-right {
+            width: 50%;
+            padding-right: 12%;
+            text-align: right;
+            /*padding-right: 8%;*/
+            float: right;
+        }
+
+.li_meInfoLeft {
+    padding-left: 9%;
+    float: left;
+    width: 25%;
+}
+
+.li_meInfoRight {
+    width: 65%;
+    float: right;
+    display: inline-block;
+}
+
+    .li_meInfoRight input {
+        text-align: right;
+        border: none;
+        width: 80%;
+    }
+
+/*选择值后返回“我”主页的显示的文本修饰*/
+.span_Name {
+    float: right;
+    height: 60px;
+    line-height: 60px;
+    text-align: right;
+    padding-right: 20%;
+}
+
+
+
+
+/*公司类型*/
+#companytype {
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color: #FFF;
+}
+
+    #companytype .cptitems {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+
+.div-cptitem {
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid #C6C6C8;
+}
+    /*每一个项*/
+    .div-cptitem a {
+        display: block;
+        height: 60px;
+        line-height: 60px;
+        padding-left: 8%;
+    }
+
+        .div-cptitem a:hover {
+            cursor: pointer;
+            color: #ff6a00;
+            background-position: 92%;
+            background-image: url("../images/tick.png");
+            background-repeat: no-repeat;
+        }
+
+.selCN {
+    color: #ff6a00;
+    background-position: 92%;
+    background-image: url("../images/tick.png");
+    background-repeat: no-repeat;
+}
+
+
+
+
+/*选择行业*/
+#div-industry {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: #FFF;
+}
+
+.div-selected {
+    overflow:auto;
+    line-height: 84px;
+    width: 93%;
+    padding-left: 7%;
+    border-bottom: 2px solid #C6C6C8;
+}
+
+    .div-selected ul {
+        width: 100%;
+        height: 50px;
+        overflow: hidden;
+    }
+
+        .div-selected ul li {
+            width: 45%;
+            float: left;
+            height: 40px;
+            line-height: 50px;
+        }
+
+            .div-selected ul li a {
+                /*display: block;*/
+                line-height: 15px;
+            }
+
+                .div-selected ul li a img {
+                    height: 20px;
+                    width: 20px;
+                }
+
+.a_clo {
+    margin-left: 5px;
+    margin-top: 15px;
+    float: right;
+    height: 20px;
+    width: 20px;
+    background-image: url("../images/zs.png");
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+}
+
+.slidedown {
+    background-image: url("../images/sq.png");
+}
+
+.li-rightSave {
+    float: right;
+    text-align: right;
+}
+
+
+/*被选中的行业*/
+a.selectedInd {
+    display: block;
+    padding: 0px 5px 0px 5px;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    border: 1px solid red;
+}
+
+    a.selectedInd img {
+        height: 17px;
+        padding-top: 10px;
+        margin-left: 10px;
+    }
+
+
+.div-IndustryItem {
+    clear: both;
+    margin-left: 7%;
+    width: 93%;
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #C6C6C8;
+}
+    /*每一个项*/
+    .div-IndustryItem a {
+        display: block;
+        height: 60px;
+        line-height: 60px;
+    }
+
+        .div-IndustryItem a:hover {
+            cursor: pointer;
+            color: #ff6a00;
+            background-position: 92%;
+            background-image: url("../images/tick.png");
+            background-repeat: no-repeat;
+        }
+
+
+/*被选中的行业,加上样式*/
+.selected {
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    color: #ff6a00;
+    background-position: 92%;
+    background-image: url("../images/tick.png");
+    background-repeat: no-repeat;
+}
+
+/*擅长行业*/
+#div_goodJob {
+    width: 100%;
+    background-color: #FFF;
+    display: none;
+}
+#div_addGoodW {
+    width:100%;
+}
+
+.div_GoodsItem {
+    padding-left:7%;
+    display: block;
+    height: 60px;
+    line-height: 60px;
+}
+
+
+
+
+/*所选地区*/
+#div_area {
+    width: 100%;
+    background-color: #FFF;
+    display: none;
+}
+
+/*把已经选择了的地区，添加到这个div*/
+#div_beSelArea {
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    /*height: 50px;
+            line-height: 50px;
+            text-align: center;*/
+}
+
+/*所有可选的地区*/
+#div_AllArea {
+    /*padding-top: 100px;*/
+    position: relative;
+    /*min-height: 88%;*/
+    width: 100%;
+    position:fixed;
+}
+
+    #div_AllArea ul.ul_provinces {
+        width: 45%;
+        float: left;
+    }
+
+        #div_AllArea ul.ul_provinces li.province {
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            position: relative;
+        }
+
+            #div_AllArea ul.ul_provinces li.province span {
+                padding-left: 7%;
+            }
+
+            #div_AllArea ul.ul_provinces li.province:hover {
+                background-color: #EAEAEA;
+            }
+
+    #div_AllArea ul.ul_city {
+        float: left;
+        width: 48%;
+        display: none;
+        top: 0px;
+        height: 100%;
+        left: 100%;
+        background-color: #EAEAEA;
+        padding-left: 7%;
+    }
+
+        #div_AllArea ul.ul_city li {
+            height: 50px;
+            line-height: 50px;
+            background-repeat: no-repeat;
+        }
+
+            /*#div_AllArea ul.ul_city li:hover {
+                cursor: pointer;
+                color: #ff6a00;
+                background-image: url('../images/tick.png');
+                background-repeat: no-repeat;
+                background-position: 75%;
+            }*/
+
+.addli_city {
+    background-position: 75%;
+    color: #ff6a00;
+    background-image: url('../images/tick.png');
+    background-repeat: no-repeat;
+}
+
+.selectPro {
+    background-color: #EAEAEA;
+}
+/*选中的市，添加至头部，设置其样式*/
+a.selectedCity {
+    display: block;
+    padding: 0px 5px 0px 5px;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    border: 1px solid red;
+}
+    a.selectedCity img {
+        margin-left:5px;
+        position:relative;
+        top:3px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+/*公司规模*/
+#div_companyZize {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: #FFF;
+}
+
+ .div_cpSizetitems {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.div_cpSizetitem {
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid #C6C6C8;
+}
+    /*每一个项*/
+    .div_cpSizetitem a {
+        display: block;
+        height: 60px;
+        line-height: 60px;
+        padding-left: 8%;
+    }
+
+        .div_cpSizetitem a:hover {
+            cursor: pointer;
+            color: #ff6a00;
+            background-position: 92%;
+            background-image: url("../images/tick.png");
+            background-repeat: no-repeat;
+        }
+
+
+
+
+
+
+
+
+
+/*子账户管理*/
+#subAccount {
+    display: none;
+    background-color: #FFF;
+    width: 100%;
+    height: 100%;
+}
+
+.div-control {
+    height: 50px;
+    border-bottom: 1px solid #EAEAEB;
+}
+
+    .div-control a {
+        height: 50px;
+        line-height: 60px;
+    }
+
+        .div-control a.a-cancel {
+            float: left;
+            padding-left: 5%;
+        }
+
+        .div-control a.a-save {
+            float: right;
+            padding-right: 5%;
+        }
+
+#div-addEmeil {
+    clear: both;
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid #EAEAEB;
+    background-image: url('../images/add.png');
+    background-repeat: no-repeat;
+    background-position: 95%;
+}
+
+.div-add {
+    width: 95%;
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #EAEAEB;
+    /*padding-left: 5%;*/
+
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            -webkit-transform: translate3d(0, 0, 0);
+            -moz-transform: translate3d(0, 0, 0);
+            -ms-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 10, 0);
+}
+   .div-add.slidein {
+                -webkit-transform: translate3d(-70px, 0, 0);
+                -moz-transform: translate3d(-70px, 0, 0);
+                -ms-transform: translate3d(-70px, 0, 0);
+                transform: translate3d(-70px, 0, 0);
+            }
+.removeList-content {
+            width: 100%; /*可以去掉*/
+            position: absolute;
+            overflow: hidden;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            -webkit-transform: translate3d(0, 0, 0);
+            -moz-transform: translate3d(0, 0, 0);
+            -ms-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 10, 0);
+        }
+
+            .removeList-content.slidein {
+                -webkit-transform: translate3d(-70px, 0, 0);
+                -moz-transform: translate3d(-70px, 0, 0);
+                -ms-transform: translate3d(-70px, 0, 0);
+                transform: translate3d(-70px, 0, 0);
+            }
+            .removeList-item {
+            width: 100%; /*可以去掉*/
+            position: absolute;
+            overflow: hidden;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            -webkit-transform: translate3d(0, 0, 0);
+            -moz-transform: translate3d(0, 0, 0);
+            -ms-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 10, 0);
+        }
+
+            .removeList-item.slidein {
+                -webkit-transform: translate3d(-70px, 0, 0);
+                -moz-transform: translate3d(-70px, 0, 0);
+                -ms-transform: translate3d(-70px, 0, 0);
+                transform: translate3d(-70px, 0, 0);
+            }
+            
+
+
+
+
+
+
+    /*获得邮箱输入框*/
+    .div-add input {
+        display: inline-block;
+        margin-left: 10%;
+        width: 55%;
+        height: 30px;
+        border: none;
+        text-align: right;
+    }
+
+#div_Emails {
+    overflow: hidden;
+}
+
+/*删除按钮*/
+.delete {
+    height: 60px;
+    line-height: 60px;
+    width: 70px;
+    background-color: #f92635;
+    color: #fff;
+    float: right;
+    text-align: center;
+}
+
+.div-conditon {
+    float: left;
+    line-height: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*支付信息，支付页面*/
+#payInfo {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: #FFF;
+}
+
+    #payInfo #div_infos {
+        width: 100%;
+        margin: 0px auto;
+    }
+
+        #payInfo #div_infos ul {
+            height: 50px;
+            line-height: 50px;
+            margin: 0px auto;
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+            #payInfo #div_infos ul li {
+                float: left;
+                text-align: center;
+                height: 49px;
+                width: 33%;
+                border-right: 1px solid #EAEAEB;
+                border-bottom: 1px solid #EAEAEB;
+            }
+/*实付*/
+.div_money {
+    width: 90%;
+    height: 60px;
+    line-height: 60px;
+    padding-left: 10%;
+}
+
+    .div_money a {
+        padding: 3px 15px 3px 15px;
+        color: #ff6a00;
+        height: 40px;
+        line-height: 40px;
+        border: 1px solid #B1B1B1;
+    }
+/*支付方式*/
+.div_payWay {
+    width: 100%;
+}
+
+.div_chocePays {
+    width: 100%;
+}
+
+.a_nextLine {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    width: 80%;
+    padding-left: 20%;
+    background-image: url('../images/zs.png');
+    background-repeat: no-repeat;
+    background-position: 10%;
+}
+
+.addpayMore {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    width: 80%;
+    padding-left: 20%;
+    background-image: url('../images/sq.png');
+    background-repeat: no-repeat;
+    background-position: 10%;
+}
+/*线下支付，显示更多*/
+#div_payMore {
+    display: none;
+}
+
+    #div_payMore a {
+        display: block;
+        width: 80%;
+        padding-left: 20%;
+        height: 25px;
+        font-size: 12px;
+        line-height: 25px;
+        background-image: none;
+    }
+/*支付宝支付*/
+.div_payment img {
+    height: 60px;
+    width: 50%;
+    border: none;
+}
+
+/*yubq add*/
+#div-main {
+    position: relative;
+}
+
+
+/*解决选择地区，行业，所在行业头部固定问题*/
+.pos {
+    /*position:fixed;*/
+}
+
+  #allIndustry, .div-selected {
+            /*position: fixed;*/
+        }
+
+        #allIndustry, #div_allGoodW, #div_AllArea {
+            /*margin-top: 52px;*/
+        }

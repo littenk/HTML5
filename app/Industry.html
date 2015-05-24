@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes"/>
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true"/>
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application"/>
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app"/>
+    <title>选择行业</title>
+    <style type="text/css">
+        a {
+            color: #000;
+            font-family: "微软雅黑";
+            text-decoration: none;
+        }
+
+        #div-selected {
+            width: 100%;
+            height: 100%;
+        }
+
+        #div-sel {
+            height: 84px;
+            line-height: 84px;
+            /*padding-left: 8%;*/
+            font-size: 15px;
+            font-family: "微软雅黑";
+            padding-left: 5%;
+            border-bottom: 2px solid gray;
+        }
+
+            #div-sel .sel {
+                /*display:block;
+                width:50px;
+                height:84px;
+                line-height:84px;
+                float: right;
+                padding-right: 10%;
+                background-image:url("images/zs.png");
+                background-repeat:no-repeat;*/
+            }
+
+        .div-item {
+            /*width: 100%;*/
+            height: 84px;
+            padding-left: 5%;
+        }
+            /*每一个项*/
+            .div-item a {
+                display: block;
+                height: 84px;
+                line-height: 84px;
+                border-bottom: 1px solid #C6C6C8;
+            }
+
+        #div-industry {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="div-industry">
+        <div class="div-selected">
+            <div id="div-sel">
+                已选行业
+            <span class="sel"><span style="color:#FF9A41">3</span>/3</span>
+            </div>
+        </div>
+        <div id="allIndustry" class="allIndustry">
+            <!-- 每一个项 -->
+            <div class="div-item unlimited">
+                <a href="#">全部行业</a>
+            </div>
+            <div class="div-item">
+                <a>计算机软件</a>
+            </div>
+            <div class="div-item">
+                <a href="#">计算机硬件/网络设备</a>
+            </div>
+            <div class="div-item">
+                <a href="#">IT服务/系统集成</a>
+            </div>
+            <div class="div-item">
+                <a href="#">互联网/移动互联网/电子商务</a>
+            </div>
+            <div class="div-item">
+                <a href="#">电子技术/半导体/集成电路</a>
+            </div>
+            <div class="div-item">
+                <a href="#">通讯(设备/运营/增值)</a>
+            </div>
+            <div class="div-item">
+                <a href="#">其他</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
